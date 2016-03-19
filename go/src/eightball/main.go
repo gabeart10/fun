@@ -15,12 +15,17 @@ var answers = []string{
 	"No",
 	"Maybe",
 }
+var eggNum = 0
+var responses = [][]string{}
 
-var easterEgg1 = []string{"kill", "Well Then"}
-var easterEgg2 = []string{"love", "Love you too ;)"}
-var responses = [][]string{easterEgg1, easterEgg2}
+func create_egg(word string, resp string) {
+	egg := []string{word, resp}
+	responses = append(responses, egg)
+}
 
 func main() {
+	create_egg("love", "Love you too ;)")
+	create_egg("kill", "Well then!")
 	for true {
 		egg := 0
 		s1 := rand.NewSource(time.Now().UnixNano())
