@@ -1,0 +1,16 @@
+#!/usr/bin/env python3
+import skilstak.colors as c
+
+waffles = input(c.red + "Do you like waffels?\n" + c.reset).strip().lower()
+if waffles == "yes":
+    pancakes = input(c.clear + c.blue + "Do you like pancakes?\n" + c.reset).strip().lower()
+    if pancakes == "yes":
+        frenchtoast = input(c.clear + c.green + "Do you like frenchtoast?\n" + c.reset).strip().lower()
+        if frenchtoast == "yes":
+            print(c.clear + c.yellow + "WAFFLES!" + c.reset)
+        else:
+            print(c.red + "Well I Do!" + c.reset)
+    else:
+        print(c.red + "Well I Do!" + c.reset)
+else:
+    print(c.red + "Well I Do!" + c.reset)

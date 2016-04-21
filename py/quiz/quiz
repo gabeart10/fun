@@ -1,0 +1,41 @@
+#!/usr/bin/env python3
+import skilstak.colors as c
+import random as r
+import time
+def q1():
+    c1 = input(c.clear + c.red + "What is my name?\n" + c.reset).strip().lower()
+    if c1 == 'yes':
+        return True
+    else:
+        return False
+    
+def q2():
+    c2 = input(c.clear + c.red + "What is life?\n" + c.reset).strip().lower()
+    if c2 == '47':
+        return True
+    else:
+        return False   
+
+def q3():
+    c3 = input(c.clear + c.red + "Can you help me?\n" + c.reset).strip().lower()
+    if c3 == 'eh':
+        return True
+    else:
+        return False
+
+questions = [q1,q2,q3]
+
+while True:
+
+    if len(questions) == 0:
+        exit()
+
+    question = r.choice(questions)
+
+    if question():
+        print(c.green + "Correct!" + c.reset)
+        questions.remove(question)
+        input()
+    else:
+        print(c.red + "Wrong!" + c.reset)
+        input()

@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+'use strict'
+var c = require('skilstak-colors');
+
+for (var x = 0;x <= 6;x++) {
+  console.log(c.red + 'Badger' + c.x);
+};
+
+for (var x = 0;x <= 1;x++) {
+  console.log(c.yellow + 'Mushroom' + c.x);
+};
+

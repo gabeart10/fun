@@ -1,0 +1,37 @@
+#!/usr/bin/env python3
+
+class Player:
+    def prompt(self, text):
+        print(text)
+
+class Hero:
+    strength = 0
+    intelligence = 0
+    agility = 0
+    health = 100
+    abilities = []
+    items = []
+    effects = []
+    def apply(self, effect):
+        effects.append(effect)
+    def remove(self, effect):
+        effects.remove(effect)
+    def give(self, item):
+        items.append(item)
+    def take(self, item):
+        items.remove(item)
+
+class Ability:
+    name = "Kill"
+    summary = "Kills you"
+    description = "You can kill some one instantly!"
+
+class Item:
+
+class Controller:
+    heroes = []
+    def play(self):
+        
+
+class Effects:
+

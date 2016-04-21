@@ -26,6 +26,7 @@ func create_egg(word string, resp string) {
 func main() {
 	create_egg("love", "Love you too ;)")
 	create_egg("kill", "Well then!")
+	fmt.Print(c.Clear)
 	for true {
 		egg := 0
 		s1 := rand.NewSource(time.Now().UnixNano())

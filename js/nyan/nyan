@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+'use strict'
+
+var c = require('skilstak-colors');
+
+while (true) {
+  console.log(c.multi("Nyan"));
+};
